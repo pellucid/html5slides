@@ -185,7 +185,7 @@ section, footer {
   font-weight: normal;
   color: #444;
   text-shadow: white 0px 1px 0px, rgba(0, 0, 0, 0.2) 0 2px 5px;
-  margin: 100px 30px 0;
+  margin: 80px 30px 0;
   display: block;
   overflow: hidden;
 }
@@ -205,7 +205,7 @@ a {
 
 li {
   list-style: none;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 button {
@@ -388,4 +388,72 @@ menu {
   font-size: 40px;
   letter-spacing: -1px;
   color: black;
+}
+
+/*
+*  From http://html5slides.googlecode.com/svn/trunk/template/index.html#15
+*/
+.fill img{
+position: absolute;
+left: 0;
+top: 0;
+/* min-width: 100%; */
+min-height: 100%;
+border-radius: 10px;
+-o-border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+z-index: -1;
+}
+
+/*
+*  From http://slides.html5rocks.com/css/default.css
+*/
+              #timeline {
+                margin-top: 10px;
+                font-size: 20px;
+              }
+              span.year {
+                display: inline-block;
+                text-align: right;
+                width: 120px;
+                letter-spacing: -2px;
+                padding-right: 10px;
+              }
+
+.css,
+.js,
+.html,
+.key {
+  font-family: 'Droid Sans';
+  display: inline-block;
+  padding: 4px;
+  line-height: 25px;
+  text-shadow: none;
+  letter-spacing: 0;
+  position: relative;
+  -moz-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+  -o-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+}
+.css {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff4), to(#ffa));
+  background-color: #ff4;
+  background: -moz-linear-gradient(left top, #ff4, #ffa);
+}
+.js {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4f4), to(#afa));
+  background-color: #4f4;
+  background: -moz-linear-gradient(left top, #4f4, #afa);
+}
+.html {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e88), to(#fee));
+  background-color: #e88;
+  background: -moz-linear-gradient(left top, #e88, #fee);
 }
