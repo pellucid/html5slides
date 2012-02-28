@@ -3,12 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <title>HTML5 Presentation demo | Script tutorials</title>
-
     <!-- Linking styles -->
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 </head>
 <body>
-
     <nav id="helpers"><!-- Defining the floating helpers of the page -->
       <button title="Previous" id="nav-prev" class="nav-prev">&lt;-</button> 
       <button title="Jump to slide" id="slide-no">3</button> 
@@ -19,62 +17,44 @@
         <button type="checkbox" data-command="back" title="Back to tutorial">Back</button>
       </menu>
     </nav>
-
-    <div class="presentation"><!-- Defining the main presentation -->
-      <div id="presentation-counter">Loading...</div>
-
-      <div class="slides"><!-- Defining slides -->
-
-
-		<!-- Defining single slide -->
-        <div class="slide" id="slide1">
-          <section class="middle"> 
-			<hgroup>
-				<p>
-					Javascript Debugging <span style='font-family: "Warnock Pro"'> & </span>  <br>
-					Browser Productivity Tips 
-				</p>
-			</hgroup>
+    <div class="presentation">
+        <!-- Defining the main presentation -->
+        <div id="presentation-counter">
+            Loading...</div>
+        <div class="slides">
+            <!-- Defining slides -->
+            <!-- Defining single slide -->
+            <div class="slide" id="slide1">
+                <section class="middle"> 
+            <hgroup>
+                <p>
+                    Javascript Debugging <span style='font-family: "Warnock Pro"'> & </span>  <br>
+                    Browser Productivity Tips 
+                </p>
+            </hgroup>
             
-			Press <span id="left-init-key" class="key">&rarr;</span> key to continue.
+            Press <span id="left-init-key" class="key">&rarr;</span> key to continue.
           </section>
-          <aside class="note"><!-- hidden notes of slide -->
+                <aside class="note"><!-- hidden notes of slide -->
             <section>
-              Notes for first slide:            <ul>
-              <li><span class="key">&larr;</span> and <span class="key">&rarr;</span> to move forward/back.</li>
-              <li><span class="key">spacebar</span> to move forward.</li>
-              <li><span class="key">N</span> to toggle hidden notes.</li>
-              <li><span class="key">H</span> to toggle help.</li>
-            </ul>
+              <span class="key">&larr;</span> and <span class="key">&rarr;</span> to move forward/back.<br/>
+              <span class="key">spacebar</span> to move forward.<br/>
+              <span class="key">N</span> to toggle hidden notes.<br/>
+              <span class="key">H</span> to toggle help.<br/>
+
+			  Let's talk about Javascript and Browser. [-->Space] 
+			  
+			  Why do we care about Javascript? Why do we spend time on browser, css or any other client side programming topics? I remember just three four years ago, all I knew about JavaScript was GetElementByID and Hidden fields, how I debug anything was Alert.  So I didn't consider Javascript serious programming.   I suspect many developers share this mentality: You know, "We are .NET developers, we write serious server side code, in C#."  As for Javascript, it should be enough just to know how to find API references in jQuery docs; And if our app calls for a fancier UI, we just find a proper jQuery library (like lightbox), plug it in and that's it. [WRONG] 
             </section>
-          </aside> 
-        </div>
-
-        <div class="slide" id="slide2">
-          <section class="middle">
-			<hgroup>
-				<p> Go to <br>
-				 http://TypeWith.Me/BinghamTech
-				</p>
-			</hgroup>
-            
-          </section>
-          <aside class="note">
-            <section>
-First off, Comments or Questions
-            </section>
-          </aside> 
-        </div>
-
-        <img class="slide" id="why"
-				style="height:90%;" src='http://28.media.tumblr.com/tumblr_lm9yf48lIP1qi1wh3o1_400.jpg'>
-		</img>
-
-		<div class="slide" id="slide3">
-          <section>
-			<hgroup class="middle">
-				<h2> Pushing the limit of what's possible on the Web </h2>
-			</hgroup>
+          </aside>
+            </div>
+            <img class="slide" id="why" src='http://28.media.tumblr.com/tumblr_lm9yf48lIP1qi1wh3o1_400.jpg'>
+            </img>
+            <div class="slide" id="slide3">
+                <section>
+            <hgroup>
+                <h1>Web Technologies Milestones</h1>
+            </hgroup>
             
             <ul id="timeline">
               <li data-auto><span class="year">1991</span> <span class="html">HTML</span></li>
@@ -86,57 +66,255 @@ First off, Comments or Questions
               <!--<li data-auto><span class="year">2002</span> <span class="css">Tableless Web Design</span></li>-->
               <li data-auto><span class="year">2005</span> <span class="js">AJAX</span></li>
               <li data-auto><span class="year"><em class="stroke">2006</em></span> <span class="js">jQuery</span></li>
-              <li data-auto><span class="year"><em class="stroke">2009</em></span> <span class="html">HTML 5</span></li>
+              <li data-auto><span class="year"><em class="stroke">2009</em></span> <span class="html">HTML 5</span> ~= <span class="html">HTML</span> + <span class="css">CSS</span> + <span class="js">JavaScript</span></li>
             </ul>
+			Javascript is OLD, but it matters again after the introduction of Ajax and jQuery. With HTML5, it becomes essential in pushing the limit of what's possible on the Web. 
+          </section>
+                <aside class="note">
+            <section>
+			 Well, Here's a timeline of when the important Web technologies were invented.   Javascript is OLD, but matters again after the introduction of Ajax and jQuery. And HTML5 gives another power shot.  A lot of Web games and Mobile app development activities are producing new  techonologies actively, such as like node.js(Serverside javascript that's it), Javascript MVC and unit testing....  HTML5 exposes more browser functions like Offline cache, in browser databases, localStorage(It saves state in Browser, for example remember which chapater you were reading in Google book and resume to the same point. It's like improved cookie.)  
+			
+			Job market has high demand for Javascript developers and pays close to .Net or Java developers, if not as high as.
+
+			Even if you don't build games or mobile apps, I'm sure you've encountered more client side needs in today's web development. For example in Bingham.com project, We needed to tweak a Modal popup library way beyond basic setup (Javier can tell you all about that!). Myself needed to integrate Google Map with server side content with quite some customizations too.
+
+			So, Javascript debugging and client side programming skills are essential these days. 
+            </section>
+          </aside>
+            </div>
+            <div class="slide" id="toc">
+                <section>
+            <hgroup>
+              <h1>
+                Today we will look at ...
+              </h1>
+            </hgroup>
+			<ul>
+				<li>
+				 <span class="key">&rarr;</span> jQuery Intellisense in VS 2010
+				</li>
+				<li>
+				 <span class="key">&rarr;</span> Browser Inspectors / Developer Tools
+				</li>
+				<li>
+				 <span class="key">&rarr;</span> jsFiddle
+				</li>
+				<li>
+				 <span class="key">&rarr;</span> Browser shortcuts
+				</li>
+			</ul>
+        </section>
+                <aside class="note">
+            <section>
+			(Now that you probably are little more convinced that Javascript deserves more our attention, I want to share practical tools and tips today.  The tools mainly are Browser Inspectors such as IE Developer Tool, and along the line of time saver and productivity, I'll also share some Browser tips.  
+
+            </section>
+          </aside>
+            </div>
+
+
+
+            <div class="slide" id="vsIntellisense">
+                <section>
+            <hgroup>
+              <h1>
+                jQuery Intellisense in VS2010
+              </h1>
+            </hgroup>
+            <p> 
+                Almost built-in, you just need to have three files:
+			</p>             
+            <p> 
+                .vsdoc - download from http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7-vsdoc.js
+			</p>             
+            <p> 
+                jquery-1.7.min.js AND the un-minified jquery-1.7.js
+			</p> 
+			<script src="https://gist.github.com/1920644.js?file=demo%20intellisense"></script>
           </section>
           <aside class="note">
             <section>
-Most active sector of web programming
+				Official jQuery download site version for vsdoc is still 1.4. The latest jQuery version is 1.7, so use 1.7 vsdoc if your use 1.7 jQuery.
             </section>
-          </aside> 
-        </div>
+          </aside>
+            </div>
 
-        <div class="slide" id="slide4">
-          <section class="middle">
+            <div class="slide" id="typewithme">
+                <section class="middle">
             <hgroup>
-              <h1>
-                Slide4
-              </h1>
-              <h2>
-                Slide Title #4
-              </h2>
+                <p>  Go to <br>
+                <a href="http://TypeWith.Me/BinghamTech" style="text-decoration: blink;"> http://TypeWith.Me/BinghamTech</a>
+				 <br> for comments or questions
+                </p>
             </hgroup>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
-        </p>
-		</section>
-        </div>
-
-        <div class="slide" id="slide5">
-          <section class="middle">
-            <hgroup>
-              <h1>
-                Slide5
-              </h1>
-              <h2>
-                Slide Title #5
-              </h2>
-            </hgroup>
-            <p>text of slide, text of slide, text of slide, text of slide</p>
+            
           </section>
+                <aside class="note">
+            <section>
+Before jumping into the demos, if you'll have questions, or if you know better on how to do certain things, please share them using this "Online notepad" I setup.  It's a multi-user collaborated document, everyone who's connected to the Url can see everyelse's inputs. 	 So I want you to type this URL in your browser and type any comments or questions there.  The URL is Typewith.me.		
+            </section>
+          </aside>
+            </div>
+
+            <div class="slide" id="inspectors">
+                <section>
+            <hgroup>
+              <h1>
+                Browser inspectors
+              </h1>
+			<img style="" src="http://sphotos.xx.fbcdn.net/hphotos-ash4/427408_10150653962525610_1817707457_n.jpg">
+			<h2>IE Developer Tool / Firebug / Chrome Inspector</h2>
+            </hgroup>
+        </section>
+                <aside class="note">
+				 <section>
+				 The next tool is a browser inspector.  I find it absolutely indispensible.  
+				 I'll demo with Chrome. Because they are quite similar in functionality, if you are familiar with one you won't have much trouble to work in the others. [-->Space]
+            </section>
+          </aside>
+            </div>
+
+
+            <div class="slide" id="similarities">
+                <section>
+            <hgroup>
+              <h1>
+                Inspectors are similar
+              </h1>
+			<h2>IE Developer Tool / Firebug / Chrome Inspector</h2>
+            </hgroup>
+             <p> 
+                F12
+			</p>             
+            <p> 
+                Same essential panes for working with DOM, CSS and Js
+			</p> 
+            <p> 
+                Ctrl+U to view source
+			</p>             
+       </section>
+                <aside class="note">
+				 <section>
+				 (talk about similarities)
+				 [-->Space]
+				 IE9 Developer Tools is said to show more tabs: Console and Network. And actually provides something that I don't have in Chrome or Firebug: Reformat minimized script
+            </section>
+          </aside>
+            </div>
+
+            <img class="slide" src='http://geekswithblogs.net/images/geekswithblogs_net/ranganh/Windows-Live-Writer/Formatting-JavaScript_BA6E/image_thumb_2.png'>
+            </img>
+
+            <div class="slide" id="slide20">
+                <section>
+            <hgroup>
+              <h1>
+                What you can do in an Inspector
+              </h1>
+			 </hgroup>
+
+			  <ul>
+				  <li>Find and modify DOM elements </li>
+				  <li>Edit CSS</li>			  
+				  <li>Inspect Resources/Profile/Audit</li>
+				  <li>Scripting and Console</li>
+			  </ul>
+        </section>
+                <aside class="note">
+            <section>
+				- Select, Search
+				- Add attributes
+				- Disable or Add CSS attributes - Auto complete
+				- Network Resources: how many millisenconds each image or resources took to download; status like 404 error
+			</section>
+          </aside>
+            </div>
+            <div class="slide" id="slide21">
+                <section>
+            <hgroup>
+              <h1>
+                What you can do in an Inspector
+              </h1>
+            </hgroup>
+		  <p>Scripts <span style="text-decoration: line-through;">pain</span>pane</p>
+				Set Breakpoint and Stepping through<br/>
+				Conditional Breakpoints<br/>
+				Ajax calls break<br/>
+				Add Watch<br/>
+				View all variables in scope<br/>
+		 
+		<p>Console pane</p>
+			Like Output and Immediate Window in VS<br/>
+			A scripting environment<br/>
+
+        </section>
+                <aside class="note">
+            <section>
+TODO: example  for each element: Conditional Breakpoint.
+				
+Console: I use it as a scripting environment.  For example				
+
+In VS change variable values on the fly
+            </section>
+          </aside>
+            </div>
+
+
+            <div class="slide" id="jsfiddle">
+                <section>
+            <hgroup>
+              <h1>
+                jsFiddle: a online playground
+              </h1>
+            </hgroup>
+            <p>http://jsfiddle.net/r7MgY/</p> 
+            <p>http://andrewwooldridge.com/blog/2011/03/16/stunning-examples-of-using-jsfiddle/</p> 
+			Renders scripts, HTML and css on the fly.
+          </section>
+                <aside class="note">
+            <section>
+            JsFiddle is an amazing tool that is accessible anywhere via a browser.  It gives you four panes. One for JavaScript, one for HTML, one for CSS and one to preview your code as it would run in a browser. This gives us a great way to test out and tweak code on the fly without having to switch back and forth between editor and browser, or upload code to a server to run. 
+
+			The beauty of JSFiddle is quick prototyping: You rip off some script, html and css from an examples page, and tweak it and make it our own. 
+
+            </section>
+          </aside>
+            </div>
+            <div class="slide" id="slide50">
+                <section>
+            <hgroup>
+              <h1>
+                Browser Tools and Timesavers
+              </h1>
+            </hgroup>
+            <p> 
+                Plugins : IE in Chrome, Selenium, 
+			</p> 
+            <p> 
+                Shortcut keys: Zooming
+			</p>
+			<p> 
+                Tab management
+			</p>             
+            <p> 
+                User scripts
+			</p> 
+          </section>
+            </div>
+
+		</div>
+        <!-- end of slides-->
+        <div id="hidden-note" class="invisible" style="display: none;">
+            VS shortcut keys
+            <img class="slide" src='http://www.vertustech.com/gfx/gallery/gfx/supercat1.jpg'>
+            </img>
+            <img class="slide" src='http://desmond.imageshack.us/Himg118/scaled.php?server=118&filename=supercat.jpg&res=medium'>
+            </img>
+            <img class="slide" src='http://images.icanhascheezburger.com/completestore/2008/12/11/128735082043417182.jpg'>
+            </img>
         </div>
-
-      </div>
-
-      <div id="hidden-note" class="invisible" style="display: none;">
-      </div> <!-- hidden note -->
-
-      <aside id="help" class="sidebar invisible" style="display: hidden;"><!-- Defining sidebar help -->
+        <!-- hidden note -->
+        <aside id="help" class="sidebar invisible" style="display: hidden;"><!-- Defining sidebar help -->
         <table>
           <caption>Help</caption>
             <tr>
@@ -157,9 +335,7 @@ Most active sector of web programming
             </tr>
         </table>
       </aside>
-
     </div>
-
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -76,10 +76,12 @@ body {
   -moz-border-radius: 20px 10px 20px 10px;
 }
 
-.slide p, .slide textarea {
+.slide p, .slide li, .slide textarea {
   font-size: 20px;
 }
-
+.middle, hgroup{	
+  text-align: center;
+}
 .slide .counter {
   color: #999999;
   position: absolute;
@@ -167,8 +169,8 @@ header {
 }
 
 h1 {
-  font-size: 100%;
   display: inline;
+  font-size: 20px;
   font-weight: normal;
   padding: 0;
   margin: 0;
@@ -214,7 +216,6 @@ button {
 
 section.middle {
   line-height: 68px;
-  text-align: center;
   display: table-cell;
   vertical-align: middle;
   height: 600px;
@@ -369,8 +370,9 @@ menu {
 
 /* custom slides */
 #slide1 p {
-  font-size: 35px;
+  font-size: 45px;
 }
+
 #slide2 li, #slide2 p {
   font-size: 32px;
 }
@@ -380,15 +382,16 @@ menu {
 
 .slide h1{
   letter-spacing: -2px;
-  font-size: 96px;
+  font-size: 35px;
   color: black;
 }
 .slide h2 {
-  margin-top: -5px;
-  font-size: 40px;
+  /* margin-top: -5px; */
+  font-size: 25px;
   letter-spacing: -1px;
-  color: black;
+  color: #444;
 }
+
 
 /*
 *  From http://html5slides.googlecode.com/svn/trunk/template/index.html#15
@@ -409,17 +412,20 @@ z-index: -1;
 /*
 *  From http://slides.html5rocks.com/css/default.css
 */
-              #timeline {
-                margin-top: 10px;
-                font-size: 20px;
-              }
-              span.year {
-                display: inline-block;
-                text-align: right;
-                width: 120px;
-                letter-spacing: -2px;
-                padding-right: 10px;
-              }
+ #why {
+	width: 600px;
+ }
+	  #timeline {
+		margin-top: 10px;
+		font-size: 20px;
+	  }
+	  span.year {
+		display: inline-block;
+		text-align: right;
+		width: 120px;
+		letter-spacing: -2px;
+		padding-right: 10px;
+	  }
 
 .css,
 .js,
