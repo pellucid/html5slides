@@ -186,7 +186,7 @@ h2 {
 section, footer {
   font-weight: normal;
   color: #444;
-  text-shadow: white 0px 1px 0px, rgba(0, 0, 0, 0.2) 0 2px 5px;
+  text-shadow: white 0px 1px 0px, rgba(0, 0, 0, 0.2) 0 1px 3px;
   margin: 80px 30px 0;
   display: block;
   overflow: hidden;

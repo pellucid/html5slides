@@ -286,6 +286,10 @@
           this.toggleHelp(); break;
         case 78: // N
           this.showNotes(); break;
+        case 65: // a
+          alert("alert( it );"); break;
+//        case 87: // w
+//          $('#why).fadeIn(); break;
       }
     },
     _touchStartX: 0,
